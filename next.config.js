@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+const { withGlobalCss } = require('next-global-css')
+
+const withConfig = withGlobalCss()
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
